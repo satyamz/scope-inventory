@@ -108,7 +108,7 @@ items:
             - name: app
               args:
                 - '--no-probe'
-              image: 'satyamz/scope:v15'
+              image: 'satyamz/scope:new'
               imagePullPolicy: Always
               ports:
                 - containerPort: 4040
@@ -180,7 +180,7 @@ items:
                 - '--probe.docker=true'
                 - '--probe.kubernetes=true'
                 - 'weave-scope-app.weave.svc.cluster.local:4040'
-              image: 'satyamz/scope:v15'
+              image: 'satyamz/scope:new'
               imagePullPolicy: Always
               securityContext:
                 privileged: true
